@@ -3,7 +3,7 @@ html, body {
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-    color: white;
+    color: gray;
     
     width: 100%;
     height: 100%;
@@ -25,7 +25,8 @@ body {
     width: 100%;
 
     background-color: transparent;
-    color: white;
+    color: lightgray;
+    backdrop-filter: blur(5px);
 }
 
 #logo {
@@ -34,27 +35,40 @@ body {
 }
 
 #nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
     padding-right: 30px;
 }
-#nav-menu:hover {
+#nav-menu > div:hover {
     cursor: pointer;
+    color: white;
 }
 
 #page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
-    height: 100%;
+    height: 100vh;
+    overflow-y: scroll;
 }
+#page::-webkit-scrollbar {
+    display: none;
+  }
 
-#summary {
+#page > div {
+    height: 100vh;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #name {
+    color: white;
     font-size: 40px;
 }
 

@@ -1,19 +1,25 @@
-export default function main() {
-    setupNavBar();
-    console.log("Loaded");
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
-function setupNavBar() {
-
-    document.getElementById("to-about-me").addEventListener("click", () => {goToPage(0)})
-    document.getElementById("to-experience").addEventListener("click", () => {goToPage(1)})
-    document.getElementById("to-projects").addEventListener("click", () => {goToPage(2)})
-    document.getElementById("to-contact").addEventListener("click", () => {goToPage(3)})
-}
-
-function goToPage(pageNumber) {
-    const page = document.getElementById("page");
-    const height = page.clientHeight;
-
-    page.scrollTo(0, pageNumber*height)
-}
+export default App;

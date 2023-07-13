@@ -1,0 +1,41 @@
+.myprojects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myprojects>div {
+    height: 250px;
+    width: 500px;
+    background-color: darkgreen;
+}
+
+/* .myprojects>a {
+    text-decoration: none;
+} */
+.tp-link {
+    height: 300px;
+    border-radius: 20px;
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    color: white;
+    font: 30px Arial, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: grey;
+    background-image: url('https://colinpanter.github.io/photoalgo/tp1/web/img/highres/reconstructions/00106u.jpg');
+    background-blend-mode: multiply;
+}
+
+.tp-link:hover {
+    color: transparent;
+    background-color: white;
+}

@@ -1,0 +1,33 @@
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+#name {
+    color: white;
+    font-size: 40px;
+}
+
+.aboutme-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+
+    width: 700px;
+}
+
+.aboutme-text>p {
+    text-align: left;
+}

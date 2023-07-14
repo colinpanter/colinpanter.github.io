@@ -1,5 +1,7 @@
 import './App.css';
 
+import { useState } from 'react';
+
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe';
 import MyExperience from './components/MyExperience';
@@ -7,18 +9,19 @@ import MyProjects from './components/MyProjects';
 import ContactMe from './components/ContactMe';
 
 function App() {
-  // const handleScroll = (event) => {
-  //   console.log(event.currentTarget.scrollTop);
-  // };
+  const [language, setLanguage] = useState("en")
+  const changeLanguage = (newLanguage) => {
+    if (language !== newLanguage) {setLanguage(newLanguage)}
+  };
 
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar changeLanguage={changeLanguage} language={language}/>
       <div id="content" className="snap-scroll">
-        <AboutMe/>
-        <MyExperience/>
-        <MyProjects/>
-        <ContactMe/>
+        <AboutMe language={language}/>
+        <MyExperience language={language}/>
+        <MyProjects language={language}/>
+        <ContactMe language={language}/>
       </div>
     </div>
   );

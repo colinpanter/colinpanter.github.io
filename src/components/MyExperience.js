@@ -1,6 +1,6 @@
 import './MyExperience.css';
 
-function MyExperience() {
+function MyExperience({language}) {
   return (
     <div className="myexperience">
         <div></div>

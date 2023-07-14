@@ -4,26 +4,53 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    padding-right: 40px;
+
+    backdrop-filter: blur(5px);
+}
+
+.left {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding-left: 40px;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+    box-sizing: border-box; 
 
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
     gap: 25px;
-
-    /* background-color: transparent; */
-    backdrop-filter: blur(5px);
 }
 
-.navbar>p {
+.right {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    padding-right: 40px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 25px;
+}
+
+.right>p {
     font-size: 17px;
 }
 
-.navbar>p:hover {
+.hoverable:hover {
     cursor: pointer;
+    color: white;
+}
+
+.active {
     color: white;
 }

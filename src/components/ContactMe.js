@@ -1,6 +1,6 @@
 import './ContactMe.css';
 
-function ContactMe() {
+function ContactMe({language}) {
   return (
     <div className="contactme">
         <div></div>

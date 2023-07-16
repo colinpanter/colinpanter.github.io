@@ -1,32 +1,65 @@
 .myprojects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.project {
+.myprojects>a {
     height: 250px;
     width: 250px;
-
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-
-    color: white;
-    font: 30px Arial, sans-serif;
-    /* border: 2px gray solid; */
-
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-
-    background-color: #31315f;
-    /* background-image: url('https://colinpanter.github.io/photoalgo/tp1/web/img/highres/reconstructions/00106u.jpg'); */
-    /* background-blend-mode: multiply; */
+    justify-content: center;
+    align-items: center;
 }
 
+
+.project {
+    height: 240px;
+    width: 240px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    background-color: #31315f;
+    transition: padding 0.5s linear;
+    text-align: left;
+}
 .project:hover {
-    background-color: gray;
+    padding: 5px;
+}
+
+.project-name {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    margin: 0;
+    width: 200px;
+
+    color: white;
+    font-size: 25px;
+}
+.project-desc {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    margin: 0;
+    width: 200px;
+
+    color: lightgray;
+    font-size: 15px;
+}
+.project-tech {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    color: gray;
+    font-size: 12px;
 }

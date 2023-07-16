@@ -31,13 +31,15 @@
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
     color: lightgray;
+    border-left: 5px transparent solid;
 }
 .choices>p:hover{
     background-color: gray;
     cursor: pointer;
 }
 .choices>.active {
-    background-color: gray;
+    /* background-color: gray; */
+    border-left: 5px gray solid;
 }
 
 .description {

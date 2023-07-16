@@ -5,8 +5,33 @@
     align-items: center;
 }
 
-.contactme>div {
-    height: 250px;
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.link {
+    /* height: 250px;
     width: 500px;
-    background-color: darkblue;
+    background-color: darkblue; */
+    /* width: 100%; */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    color: gray;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.reachout {
+    color: white;
+    font-size: 20px;
 }

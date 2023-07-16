@@ -2,7 +2,7 @@ import './ContactMe.css';
 
 function ContactMe({language}) {
   return (
-    <div className="contactme">
+    <div className="contactme" id='contactme'>
       <p className='reachout'>Reach out to me</p>
       <div className='links'>
         <a className='link' href='mailto:colinpanter1@gmail.com'>

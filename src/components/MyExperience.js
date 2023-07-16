@@ -21,7 +21,7 @@ function MyExperience({language}) {
   const [displayed, setDisplayed] = useState(experiences[0])
 
   return (
-    <div className="myexperience">
+    <div className="myexperience" id='experience'>
         <div class="choices">
         {experiences.map((item,index)=>{
           return <p className={displayed.name===item.name ? "active" : ""} onClick={()=>{setDisplayed(item)}}>&gt; {item.name}</p>

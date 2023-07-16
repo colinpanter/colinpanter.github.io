@@ -26,10 +26,10 @@ function NavBar({changeLanguage, language}) {
         <p className={language !== "en" ? 'hoverable' : 'active'} onClick={() => {changeLanguage("en")}}>EN</p>
       </div>
       <div className="right">
-        <p className='hoverable'>{text.aboutMe}</p>
-        <p className='hoverable'>{text.experience}</p>
-        <p className='hoverable'>{text.projects}</p>
-        <p className='hoverable'>{text.contactMe}</p>
+        <p className='hoverable' onClick={() => window.location.replace("/#aboutme")}>{text.aboutMe}</p>
+        <p className='hoverable' onClick={() => window.location.replace("/#experience")}>{text.experience}</p>
+        <p className='hoverable' onClick={() => window.location.replace("/#projects")}>{text.projects}</p>
+        <p className='hoverable' onClick={() => window.location.replace("/#contactme")}>{text.contactMe}</p>
       </div>
     </div>
   );

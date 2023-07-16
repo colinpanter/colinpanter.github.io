@@ -15,7 +15,7 @@ const texts = {
 function AboutMe({language}) {
   const text = texts[language]
   return (
-    <div className="aboutme">
+    <div className="aboutme" id="aboutme">
         <div className="title">
             <div>{text.hi}</div>
             <div id='name'>Colin Panter</div>

@@ -1,11 +1,26 @@
 .myprojects {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.myprojects>a {
+.project-title {
+    color: white;
+    font-size: 40px;
+}
+
+.project-container {
+    width: 800px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
     height: 250px;
     width: 250px;
     
@@ -13,6 +28,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-decoration: none
 }
 
 
@@ -29,7 +46,7 @@
     gap: 10px;
 
     background-color: #31315f;
-    transition: padding 0.5s linear;
+    transition: padding 0.1s linear;
     text-align: left;
 }
 .project:hover {
@@ -62,4 +79,43 @@
     bottom: 5px;
     color: gray;
     font-size: 12px;
+}
+
+.project>.ext-link {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    fill: gray;
+}
+.project>.ext-link:hover{
+    fill: white;
+}
+.project>.gh-link {
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    fill: gray;
+}
+.project>.gh-link:hover{
+    fill: white;
 }

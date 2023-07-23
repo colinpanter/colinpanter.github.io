@@ -14,7 +14,7 @@
 }
 
 #name {
-    color: white;
+    color: var(--high-contrast-color);
     font-size: 40px;
 }
 

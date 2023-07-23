@@ -14,7 +14,7 @@
     height: 350px;
     width: 200px;
     background-color: transparent;
-    border: 1px gray solid;
+    border: 1px var(--low-contrast-color) solid;
 }
 .choices>p{
     width: 100%;
@@ -30,23 +30,23 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
-    color: lightgray;
+    color: var(--main-color);
     border-left: 5px transparent solid;
 }
 .choices>p:hover{
-    background-color: gray;
+    background-color: var(--low-contrast-color);
     cursor: pointer;
 }
 .choices>.active {
     /* background-color: gray; */
-    border-left: 5px gray solid;
+    border-left: 5px var(--low-contrast-color) solid;
 }
 
 .description {
     height: 350px;
     width: 500px;
     background-color: transparent;
-    border: 1px gray solid;
+    border: 1px var(--low-contrast-color) solid;
     text-align: left;
     
     padding: 10px;

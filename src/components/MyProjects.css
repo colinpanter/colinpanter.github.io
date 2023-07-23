@@ -6,7 +6,7 @@
 }
 
 .project-title {
-    color: white;
+    color: var(--high-contrast-color);
     font-size: 40px;
 }
 
@@ -45,7 +45,7 @@
     align-items: flex-start;
     gap: 10px;
 
-    background-color: #31315f;
+    background-color: var(--secondary-background-color);
     transition: padding 0.1s linear;
     text-align: left;
 }
@@ -60,7 +60,7 @@
     margin: 0;
     width: 200px;
 
-    color: white;
+    color: var(--high-contrast-color);
     font-size: 25px;
 }
 .project-desc {
@@ -70,14 +70,14 @@
     margin: 0;
     width: 200px;
 
-    color: lightgray;
+    color: var(--main-color);
     font-size: 15px;
 }
 .project-tech {
     position: absolute;
     left: 20px;
     bottom: 5px;
-    color: gray;
+    color: var(--low-contrast-color);
     font-size: 12px;
 }
 
@@ -95,10 +95,10 @@
     justify-content: center;
     align-items: center;
 
-    fill: gray;
+    fill: var(--low-contrast-color);
 }
 .project>.ext-link:hover{
-    fill: white;
+    fill: var(--high-contrast-color);
 }
 .project>.gh-link {
     position: absolute;
@@ -114,8 +114,8 @@
     justify-content: center;
     align-items: center;
 
-    fill: gray;
+    fill: var(--low-contrast-color);
 }
 .project>.gh-link:hover{
-    fill: white;
+    fill: var(--high-contrast-color);
 }

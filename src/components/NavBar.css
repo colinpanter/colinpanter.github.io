@@ -48,9 +48,9 @@
 
 .hoverable:hover {
     cursor: pointer;
-    color: white;
+    color: var(--high-contrast-color);
 }
 
 .left>.active {
-    color: white;
+    color: var(--high-contrast-color);
 }

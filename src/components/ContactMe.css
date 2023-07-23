@@ -26,16 +26,16 @@
     align-items: center;
     gap: 20px;
 
-    color: gray;
+    color: var(--low-contrast-color);
     font-size: 15px;
     text-decoration: none;
 }
 
 .reachout {
-    color: white;
+    color: var(--high-contrast-color);
     font-size: 40px;
 }
 
 .link>.Logo {
-    fill: gray;
+    fill: var(--low-contrast-color);
 }

@@ -17,7 +17,7 @@ const texts = {
         type: "job",
         org: "Desjardins",
         location: "Lévis, QC",
-        date: "2022-2023",
+        date: "Mai 2022 - Mai 2023",
         description: [
           "Work in an agile framework requiring coordination from multiple teams",
           "Develop, document and deploy services used by Desjardins' conversational robot",
@@ -30,7 +30,7 @@ const texts = {
         type: "job",
         org: "Defense Canada",
         location: "Valcartier, QC",
-        date: "2022-2023",
+        date: "Automne 2021",
         description: [
           "Extend known techniques to different spectral bands : visible and near-infrared (VNIR), short-wave infrared (SWIR), long-wave infrared (LWIR)",
           "Develop deep learning algorithms for target identification on hyperspectral images",
@@ -43,7 +43,7 @@ const texts = {
         type: "job",
         org: "CHUL",
         location: "Québec, QC",
-        date: "2022-2023",
+        date: "Été 2019",
         description: [
           "Develop and train a deep convolutionnal neural network and use diverse machine learning methods to identify and track différent points on a mouse’s hind legs in a video",
           "Collaboration with CHUL's neuroscience research center and the Computer Vision and Systems Laboratory of Laval University",
@@ -79,7 +79,7 @@ const texts = {
         type: "job",
         org: "Desjardins",
         location: "Lévis, QC",
-        date: "2022-2023",
+        date: "May 2022 - May 2023",
         description: [
           "Travailler avec une approche agile demandant la coordination de plusieurs équipes",
           "Développer, documenter et livrer des services menant à l'amélioration du robot conversationnel de Desjardins",
@@ -92,7 +92,7 @@ const texts = {
         type: "job",
         org: "Défense Canada",
         location: "Valcartier, QC",
-        date: "2022-2023",
+        date: "Fall 2021",
         description: [
           "Extension des techniques existantes à différentes bandes spectrales (visible et procheinfrarouge (VNIR), infrarouge à courte longueur d'onde (SWIR), infrarouge lointain (LWIR))",
           "Développement d'algorithmes d'apprentissage profond d'identification de cibles appliqués aux images hyperspectrales",
@@ -105,7 +105,7 @@ const texts = {
         type: "job",
         org: "CHUL",
         location: "Québec, QC",
-        date: "2022-2023",
+        date: "Summer 2019",
         description: [
           "Développer et entraîner une architecture à réseaux de neurones à convolution ainsi que diverses méthodes d'apprentissage machine afin de suivre différents points de la patte d’une souris dans un vidéo",
           "Collaboration entre l'axe des Neurosciences et les laboratoires de vision numérique de l'Université Laval",
@@ -150,14 +150,11 @@ function JobInfo({info}) {
   }
   return (
     <div className='experience-info'>
+      <p className='experience-date'>{info.date}</p>
       <p className='job-title'>{info.title}</p>
       <div className='line'>
         <p>{info.org}</p>
         <p>{info.location}</p>
-      </div>
-      <div className='line'>
-        <p></p>
-        <p>{info.date}</p>
       </div>
       <ul>
         {info.description.map((task,index)=>{
@@ -171,7 +168,13 @@ function JobInfo({info}) {
 
 function MyExperience({language}) {
   const text = texts[language]
-  const [displayed, setDisplayed] = useState(texts[language].jobs[0])
+  const [displayed, setDisplayed] = useState(texts[language].jobs[0].id)
+
+  const jobs = {}
+  jobs[text.education.id] = <JobInfo info={text.education}/>
+  text.jobs.forEach(job => {
+    jobs[job.id] = <JobInfo info={job}/>
+  });
 
   return (
     <div className="myexperience" id='experience'>
@@ -179,11 +182,11 @@ function MyExperience({language}) {
       <div className="experience-container">
         <div class="choices">
         {text.jobs.map((job,index)=>{
-          return <p className={displayed.id===job.id ? "active" : ""} onClick={()=>{setDisplayed(job)}}>{job.org}</p>
+          return <p className={displayed===job.id ? "active" : ""} onClick={()=>{setDisplayed(job.id)}}>{job.org}</p>
         })}
-        <p className={displayed.id===text.education.id ? "active" : ""} onClick={()=>{setDisplayed(text.education)}}>{text.education.title}</p>
+        <p className={displayed===text.education.id ? "active" : ""} onClick={()=>{setDisplayed(text.education.id)}}>{text.education.title}</p>
         </div>
-        <JobInfo info={displayed}/>
+        {jobs[displayed]}
       </div>
       <a className="experience-resume" href={text.resume.ref} target="_blank" rel="noreferrer">{text.resume.title}</a>
     </div>

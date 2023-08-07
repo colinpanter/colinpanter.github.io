@@ -17,7 +17,7 @@ const texts = {
         type: "job",
         org: "Desjardins",
         location: "Lévis, QC",
-        date: "Mai 2022 - Mai 2023",
+        date: "May 2022 - May 2023",
         description: [
           "Work in an agile framework requiring coordination from multiple teams",
           "Develop, document and deploy services used by Desjardins' conversational robot",
@@ -30,7 +30,7 @@ const texts = {
         type: "job",
         org: "Defense Canada",
         location: "Valcartier, QC",
-        date: "Automne 2021",
+        date: "Fall 2021",
         description: [
           "Extend known techniques to different spectral bands : visible and near-infrared (VNIR), short-wave infrared (SWIR), long-wave infrared (LWIR)",
           "Develop deep learning algorithms for target identification on hyperspectral images",
@@ -43,7 +43,7 @@ const texts = {
         type: "job",
         org: "CHUL",
         location: "Québec, QC",
-        date: "Été 2019",
+        date: "Summer 2019",
         description: [
           "Develop and train a deep convolutionnal neural network and use diverse machine learning methods to identify and track différent points on a mouse’s hind legs in a video",
           "Collaboration with CHUL's neuroscience research center and the Computer Vision and Systems Laboratory of Laval University",
@@ -79,7 +79,7 @@ const texts = {
         type: "job",
         org: "Desjardins",
         location: "Lévis, QC",
-        date: "May 2022 - May 2023",
+        date: "Mai 2022 - Mai 2023",
         description: [
           "Travailler avec une approche agile demandant la coordination de plusieurs équipes",
           "Développer, documenter et livrer des services menant à l'amélioration du robot conversationnel de Desjardins",
@@ -92,7 +92,7 @@ const texts = {
         type: "job",
         org: "Défense Canada",
         location: "Valcartier, QC",
-        date: "Fall 2021",
+        date: "Automne 2021",
         description: [
           "Extension des techniques existantes à différentes bandes spectrales (visible et procheinfrarouge (VNIR), infrarouge à courte longueur d'onde (SWIR), infrarouge lointain (LWIR))",
           "Développement d'algorithmes d'apprentissage profond d'identification de cibles appliqués aux images hyperspectrales",
@@ -105,7 +105,7 @@ const texts = {
         type: "job",
         org: "CHUL",
         location: "Québec, QC",
-        date: "Summer 2019",
+        date: "Été 2019",
         description: [
           "Développer et entraîner une architecture à réseaux de neurones à convolution ainsi que diverses méthodes d'apprentissage machine afin de suivre différents points de la patte d’une souris dans un vidéo",
           "Collaboration entre l'axe des Neurosciences et les laboratoires de vision numérique de l'Université Laval",

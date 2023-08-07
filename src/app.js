@@ -16,6 +16,8 @@ function App() {
 
   return (
     <div className="App">
+      <meta name="viewport" content="width=1024"></meta>
+      
       <NavBar changeLanguage={changeLanguage} language={language}/>
       <div id="content" className="snap-scroll">
         <AboutMe language={language}/>

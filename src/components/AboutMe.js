@@ -3,11 +3,12 @@ import './AboutMe.css';
 const texts = {
   en: {
     hi: "Hi, I am",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    summary: "Graduated in physics and software engineering, my passion for science blends seamlessly with my interest in computer science. My thirst for learning drives me to continuously explore new skills and tackle novel challenges. My experience is primarily centered around machine learning and backend development. However, I remain open and enthusiastic about broadening my horizons by honing my skills in various other domains. My journey reflects my commitment to excellence and innovation."
   },
   fr: {
     hi: "Bonjour, je suis",
-    summary: "Diplomé en physique et en génie logiciel, je suis le meilleur, le plus intelligent et le plus beau"
+    // summary: "Diplomé en physique et en génie logiciel, je suis autant passionné par la science que par l'informatique. Je suis constamment à la recherche de nouvelles aptitudes à acquérir ainsi que de nouveaux problèmes à résoudre. Mon expérience porte principalement sur l'apprentissage machine et le développement de back-end. Cependant, je suis aussi ouvert à développer mes compétences dans différents domaines."
+    summary: "Diplômé en physique et en génie logiciel, ma passion pour la science se marie harmonieusement avec mon intérêt pour l'informatique. Ma soif d'apprentissage me pousse à constamment explorer de nouvelles compétences et à relever des défis inédits. Mon expérience se concentre principalement sur l'apprentissage machine et le développement de back-ends. Néanmoins, je reste ouvert et enthousiaste à élargir mes horizons en développant mes compétences dans divers autres domaines. Mon parcours reflète mon dévouement à l'excellence et à l'innovation."
   }
 }
 

@@ -7,7 +7,6 @@ const texts = {
   },
   fr: {
     hi: "Bonjour, je suis",
-    // summary: "Diplomé en physique et en génie logiciel, je suis autant passionné par la science que par l'informatique. Je suis constamment à la recherche de nouvelles aptitudes à acquérir ainsi que de nouveaux problèmes à résoudre. Mon expérience porte principalement sur l'apprentissage machine et le développement de back-end. Cependant, je suis aussi ouvert à développer mes compétences dans différents domaines."
     summary: "Diplômé en physique et en génie logiciel, ma passion pour la science se marie harmonieusement avec mon intérêt pour l'informatique. Ma soif d'apprentissage me pousse à constamment explorer de nouvelles compétences et à relever des défis inédits. Mon expérience se concentre principalement sur l'apprentissage machine et le développement de back-ends. Néanmoins, je reste ouvert et enthousiaste à élargir mes horizons en développant mes compétences dans divers autres domaines. Mon parcours reflète mon dévouement à l'excellence et à l'innovation."
   }
 }
@@ -22,7 +21,7 @@ function AboutMe({language}) {
             <div id='name'>Colin Panter</div>
         </div>
         <div className="aboutme-text">
-            <img src={require("../assets/portrait2.jpg")} height={"300px"} alt='' />
+            <img src={require("../assets/portrait.jpg")} height={"300px"} alt='' />
             <p>{text.summary}</p>
         </div>
     </div>

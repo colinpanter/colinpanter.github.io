@@ -8,8 +8,11 @@ import MyExperience from './components/MyExperience';
 import MyProjects from './components/MyProjects';
 import ContactMe from './components/ContactMe';
 
+const SUPPORTED_LANGUAGES = new Set(['en', 'fr'])
+
 function App() {
-  const [language, setLanguage] = useState("en")
+  const usrlang = (navigator.language || navigator.userLanguage).split("-")[0];
+  const [language, setLanguage] = useState(SUPPORTED_LANGUAGES.has(usrlang) ? usrlang : 'en')
   const changeLanguage = (newLanguage) => {
     if (language !== newLanguage) {setLanguage(newLanguage)}
   };

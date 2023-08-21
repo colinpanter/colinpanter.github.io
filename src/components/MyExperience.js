@@ -22,7 +22,8 @@ const texts = {
           "Work in an agile framework requiring coordination from multiple teams",
           "Develop, document and deploy services used by Desjardins' conversational robot",
           "Ensure the continuous deployment of services supported by the team",
-        ]
+        ],
+        tech: "Java - Spring Boot - Node.js - Concourse CI"
       },
       {
         id: "CRDC",
@@ -35,7 +36,8 @@ const texts = {
           "Extend known techniques to different spectral bands : visible and near-infrared (VNIR), short-wave infrared (SWIR), long-wave infrared (LWIR)",
           "Develop deep learning algorithms for target identification on hyperspectral images",
           "Analyse large datasets to evaluate the performances of developed deep learning methods",
-        ]
+        ],
+        tech: "Python - Pytorch"
       },
       {
         id: "CHUL",
@@ -47,7 +49,8 @@ const texts = {
         description: [
           "Develop and train a deep convolutionnal neural network and use diverse machine learning methods to identify and track différent points on a mouse’s hind legs in a video",
           "Collaboration with CHUL's neuroscience research center and the Computer Vision and Systems Laboratory of Laval University",
-        ]
+        ],
+        tech: "Python - Pytorch"
       }
     ],
     education: {
@@ -84,7 +87,8 @@ const texts = {
           "Travailler avec une approche agile demandant la coordination de plusieurs équipes",
           "Développer, documenter et livrer des services menant à l'amélioration du robot conversationnel de Desjardins",
           "Assurer le déploiement continu des services pris en charge par l'équipe",
-        ]
+        ],
+        tech: "Java - Spring Boot - Node.js - Concourse CI"
       },
       {
         id: "CRDC",
@@ -94,10 +98,11 @@ const texts = {
         location: "Valcartier, QC",
         date: "Automne 2021",
         description: [
-          "Extension des techniques existantes à différentes bandes spectrales (visible et procheinfrarouge (VNIR), infrarouge à courte longueur d'onde (SWIR), infrarouge lointain (LWIR))",
+          "Extension des techniques existantes à différentes bandes spectrales (visible et proche-infrarouge (VNIR), infrarouge à courte longueur d'onde (SWIR), infrarouge lointain (LWIR))",
           "Développement d'algorithmes d'apprentissage profond d'identification de cibles appliqués aux images hyperspectrales",
-          "Traitement de grands ensembles de données dans le but d'évaluer les performances des méthodes d'apprentissage profond de RDDC",
-        ]
+          "Traitement de grands ensembles de données dans le but d'évaluer les performances des méthodes d'apprentissage profond",
+        ],
+        tech: "Python - Pytorch"
       },
       {
         id: "CHUL",
@@ -109,7 +114,8 @@ const texts = {
         description: [
           "Développer et entraîner une architecture à réseaux de neurones à convolution ainsi que diverses méthodes d'apprentissage machine afin de suivre différents points de la patte d’une souris dans un vidéo",
           "Collaboration entre l'axe des Neurosciences et les laboratoires de vision numérique de l'Université Laval",
-        ]
+        ],
+        tech: "Python - Pytorch"
       }
     ],
     education: {
@@ -161,6 +167,7 @@ function JobInfo({info}) {
           return <li>{task}</li>
         })}
       </ul>
+      <p className='job-tech'>{info.tech}</p>
     </div>
   )
 }

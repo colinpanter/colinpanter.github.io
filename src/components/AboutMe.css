@@ -30,4 +30,5 @@
 
 .aboutme-text>p {
     text-align: left;
+    white-space: pre-wrap;
 }
